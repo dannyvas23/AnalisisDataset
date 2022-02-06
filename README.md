@@ -1,6 +1,7 @@
 #Dataset
 
 
-| Columna | Descripciónn |
+| Comment | Description | template example | compiled example |
 | --- | --- | --- | --- |
-| Name | Generates the code of the function that given the structure variable |
+| 123 | Generates the code of the function that given the structure variable. | 123 | 123 |
+
