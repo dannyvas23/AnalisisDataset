@@ -7,7 +7,9 @@ Este datasat tiene como objetivo clasificar estrellas, galaxias y cuásares en f
 
 Es importante conocer que la catalogación temprana de las estrellas y su distribución en el cielo ha llevado a la comprensión de que forman nuestra propia galaxia y, siguiendo la distinción de que Andrómeda era una galaxia separada de la nuestra, numerosas galaxias comenzaron a estudiarse a medida que se construían telescopios más potentes.
 
-Acontinuación se menciona cada una de las columnas que contiene el dataset:
+Los datos consisten en 100.000 observaciones del espacio tomadas por el SDSS (Sloan Digital Sky Survey). Cada observación se describe mediante 17 columnas de características y una columna de clase que la identifica como estrella, galaxia o cuásar.
+
+A continuación se menciona cada una de las columnas que contiene el dataset:
 
 | Variables | Descripción | 
 | --- | --- | 
