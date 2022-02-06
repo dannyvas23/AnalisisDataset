@@ -1,6 +1,6 @@
-## Dataset: 
+## Dataset: Stellar Classification Dataset - SDSS17
 
-### Recurso sacado de 
+### Recurso sacado de https://www.kaggle.com/fedesoriano/stellar-classification-dataset-sdss17
 
 Acontinuación se menciona cada una de las columnas que contiene el dataset:
 
