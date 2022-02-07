@@ -19,8 +19,8 @@ A continuación se menciona cada una de las columnas que contiene el dataset:
 | u | Filtro ultravioleta en el sistema fotométrico. | 
 | g | Filtro verde en el sistema fotométrico. | 
 | r | Filtro rojo en el sistema fotométrico. | 
-| i | Generates the code of the function that given the structure variable. | 
-| z | Generates the code of the function that given the structure variable. | 
+| i | Filtro de infrarrojo cercano en el sistema fotométrico. | 
+| z | Filtro infrarrojo en el sistema fotométrico. | 
 | run_ID | Número de ejecución utilizado para identificar la exploración específica. | 
 | rereun_ID | Número de repetición para especificar cómo se ha procesado la imagen. | 
 | cam_col | Columna de la cámara para identificar la línea de escaneo dentro de la ejecución. | 
