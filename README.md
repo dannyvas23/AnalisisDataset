@@ -50,4 +50,33 @@ Las ventajas de un árbol de decisión:
  - Explica el comportamiento respecto a una determinada decisión.
  - Reduce el número de variables independientes.
 
+Describir los pasos que se deben seguir para la aplicación del algoritmo.
+
+Algoritmo: Árbol de decisión, con método de crecimiento CHAID y CRT.
+Permite crear en cada partición desde dos subconjuntos hasta el mismo número de grupos que de categorías de la variable predictora, consiguiendo reducir en mayor medida la varianza residual y, al mismo tiempo, mejorar la selección de otras variables explicativas.
+
+1. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol.
+
+
+
+2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
+Variable dependiente: class.
+alpha
+delta
+u
+g
+r
+i
+z
+MJD
+redshift
+Variables sin importancia para el análisis(son identificadores): 
+run_ID
+rerun_ID
+cam_col
+field_ID
+spec_obj_ID
+fiber_ID
+obj_ID
+plate
 
