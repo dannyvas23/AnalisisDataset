@@ -90,3 +90,24 @@ plate
 4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
 
 -Interpretarlos y realizar predicciones con nuevos datos como ejemplo de aplicación del algoritmo.
+
+Los resultados obtenidos por la herramienta IBM SPSS son los siguientes:
+
+Con el método de crecimiento CRT se alcanzó una acierto del 96,6% frente al método CHAID con 96,1%, lo cual permite analizar que la clasificación fue mejor en el primer método, además hay que señalar que en los datos clasificados por “QSO” y “START” existen gran variación, como por ejemplo: lo que provoca que la primera clase mencionada anteriormente existen un total de 2607 falsos negativos, lo que quiere decir que esos valores reales son de la clase “QSO” pero el modelo los predijo como valores “Galaxy”, por lo que tanto, pierde efectividad en la predicción dando un porcentaje de 86,2% (El error correspondiente sería del 13,8% que serían un total de 2610 muestras clasificadas en otros aspectos).
+
+**IMAGENES ALEXIS**
+
+|  |RESUMEN DE MODELO CHAID| | 
+| --- | --- | ---|   
+|  | Método de crecimiento | CHAID | 
+|  | Variable dependiente | class |
+||Variables independientes|alpha, delta, u, g, r, i, z, MJD, redshift|
+|**Especificaciones**|Validación|Ninguna|
+||Máxima profundidad de árbol |5|
+||Mínimo de casos en un nodo filial|100|
+||Mínimo de casos en un nodo paren |50|
+| --- | --- | ---| 
+||Variables independientes incluidas|redshift, r, u, z, i, alpha, MJD, g|
+||Número de nodos|37|
+|**Resultados**|Número de nodos terminales |19|
+||Profundidad|5|
