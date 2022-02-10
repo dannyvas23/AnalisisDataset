@@ -101,3 +101,21 @@ Con el método de crecimiento CRT se alcanzó una acierto del 96,6% frente al m�
 ||Número de nodos|37|
 |**Resultados**|Número de nodos terminales |19|
 ||Profundidad|5|
+
+
+|  |RESUMEN DE MODELO CRT| | 
+| --- | --- | ---|   
+|  | Método de crecimiento | CRT | 
+|  | Variable dependiente | class |
+||Variables independientes|alpha, delta, u, g, r, i, z, MJD, redshift|
+|**Especificaciones**|Validación|Ninguna|
+||Máxima profundidad de árbol |5|
+||Mínimo de casos en un nodo filial|100|
+||Mínimo de casos en un nodo paren |50|
+| --- | --- | ---| 
+||Variables independientes incluidas|redshift, r, u, z, i, alpha, MJD, g|
+||Número de nodos|37|
+|**Resultados**|Número de nodos terminales |19|
+||Profundidad|5|
+
+Como se puede apreciar en la tabla 1 y 2 se puede ver el resumen de los modelos empleados, aquí se denotan algunas diferencias que caracterizan a cada algoritmo; en el algoritmo CHAID, genera un árbol que cuenta con una profundidad de 3, con un número de nodos de 209 y nodos terminales 148, en cambio haciendo uso del algoritmo CRT incrementa la profundidad a 5 y reduce el número de nodos a 37  y 19 nodos terminales.
