@@ -89,7 +89,7 @@ plate
 
 4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
 
-### Interpretación y Predicciones con nuevos datos como ejemplo de aplicación del algoritmo.
+### Análisis e Interpretación de aplicación del algoritmo.
 
 Los resultados obtenidos por la herramienta IBM SPSS son los siguientes:
 
