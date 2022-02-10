@@ -57,7 +57,7 @@ Permite crear en cada partición desde dos subconjuntos hasta el mismo número d
 
 1. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol.
 
-![Screenshot](https://drive.google.com/drive/u/3/folders/1iCdTcN3PUW6Fw7Lz-Nk4tC1h5e-KUc0t)
+[![0.png](https://i.postimg.cc/bYkn3gXQ/0.png)](https://postimg.cc/0r5rNpyQ)
 
 2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
 Variable dependiente: class.
@@ -79,7 +79,7 @@ spec_obj_ID
 fiber_ID
 obj_ID
 plate
-
+[![1.jpg](https://i.postimg.cc/MZnnFYhs/1.jpg)](https://postimg.cc/G913Bv3Y)
 3. Se selecciona el método de crecimiento que mejor nos parezca conveniente usar.
 
 
