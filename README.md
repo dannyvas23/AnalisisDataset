@@ -50,7 +50,7 @@ Las ventajas de un árbol de decisión:
  - Explica el comportamiento respecto a una determinada decisión.
  - Reduce el número de variables independientes.
 
-Describir los pasos que se deben seguir para la aplicación del algoritmo.
+### Pasos para la aplicación del Algoritmo.
 
 Algoritmo: Árbol de decisión, con método de crecimiento CHAID y CRT.
 Permite crear en cada partición desde dos subconjuntos hasta el mismo número de grupos que de categorías de la variable predictora, consiguiendo reducir en mayor medida la varianza residual y, al mismo tiempo, mejorar la selección de otras variables explicativas.
@@ -89,7 +89,7 @@ plate
 
 4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
 
--Interpretarlos y realizar predicciones con nuevos datos como ejemplo de aplicación del algoritmo.
+### Interpretación y Predicciones con nuevos datos como ejemplo de aplicación del algoritmo.
 
 Los resultados obtenidos por la herramienta IBM SPSS son los siguientes:
 
