@@ -57,7 +57,7 @@ Permite crear en cada partición desde dos subconjuntos hasta el mismo número d
 
 1. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol.
 
-
+![Screenshot](https://drive.google.com/drive/u/3/folders/1iCdTcN3PUW6Fw7Lz-Nk4tC1h5e-KUc0t)
 
 2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
 Variable dependiente: class.
