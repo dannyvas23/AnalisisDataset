@@ -80,7 +80,10 @@ spec_obj_ID
 fiber_ID
 obj_ID
 plate
-[![1.jpg](https://i.postimg.cc/MZnnFYhs/1.jpg)](https://postimg.cc/G913Bv3Y)
+<p align="center">
+  <img width="460" height="370" src="https://i.postimg.cc/MZnnFYhs/1.jpg">
+</p>
+
 3. Se selecciona el método de crecimiento que mejor nos parezca conveniente usar.
 
 
@@ -95,9 +98,12 @@ plate
 Los resultados obtenidos por la herramienta IBM SPSS son los siguientes:
 
 Con el método de crecimiento CRT se alcanzó una acierto del 96,6% frente al método CHAID con 96,1%, lo cual permite analizar que la clasificación fue mejor en el primer método, además hay que señalar que en los datos clasificados por “QSO” y “START” existen gran variación, como por ejemplo: lo que provoca que la primera clase mencionada anteriormente existen un total de 2607 falsos negativos, lo que quiere decir que esos valores reales son de la clase “QSO” pero el modelo los predijo como valores “Galaxy”, por lo que tanto, pierde efectividad en la predicción dando un porcentaje de 86,2% (El error correspondiente sería del 13,8% que serían un total de 2610 muestras clasificadas en otros aspectos).
-
-[![cf0.png](https://i.postimg.cc/8kR2N8Qs/cf0.png)](https://postimg.cc/14zCrjzZ)
-[![cf1.png](https://i.postimg.cc/J4728G5d/cf1.png)](https://postimg.cc/qgYLXBY8)
+<p align="center">
+  <img width="400" height="200" src="https://i.postimg.cc/8kR2N8Qs/cf0.png">
+</p>
+<p align="center">
+  <img width="400" height="200" src="https://i.postimg.cc/J4728G5d/cf1.png">
+</p>
 
 
 |  |RESUMEN DE MODELO CHAID| | 
