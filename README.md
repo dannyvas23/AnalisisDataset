@@ -61,35 +61,16 @@ Permite crear en cada partición desde dos subconjuntos hasta el mismo número d
 </p>
 
 2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
-Variable dependiente: class.
-alpha
-delta
-u
-g
-r
-i
-z
-MJD
-redshift
-Variables sin importancia para el análisis(son identificadores): 
-run_ID
-rerun_ID
-cam_col
-field_ID
-spec_obj_ID
-fiber_ID
-obj_ID
-plate
+- Variable dependiente: class.
+- Variables independientes: alpha, delta, u, g, r, i, z, MJD, redshift.
+- Variables sin importancia para el análisis(son identificadores): run_ID, rerun_ID, cam_col, field_ID, spec_obj_ID, fiber_ID, obj_ID, plate.
 <p align="center">
   <img width="460" height="370" src="https://i.postimg.cc/MZnnFYhs/1.jpg">
 </p>
 
 3. Se selecciona el método de crecimiento que mejor nos parezca conveniente usar.
-
-
- -El método de crecimiento que se utilizó fue el CRT (Árboles de clasificación y regresión), el cual divide los datos en segmentos para que sean lo más homogéneos posible respecto a la variable dependiente. 
-
- -Además, se usó CHAID (Detector automático de interacción chi-cuadrado), el mismo que explora datos de forma rápida y eficaz, y crea segmentos y perfiles con respecto al resultado deseado. CHAID elige la variable independiente (predictora) que presenta la interacción más fuerte con la variable dependiente.
+ - El método de crecimiento que se utilizó fue el CRT (Árboles de clasificación y regresión), el cual divide los datos en segmentos para que sean lo más homogéneos posible respecto a la variable dependiente. 
+ - Además, se usó CHAID (Detector automático de interacción chi-cuadrado), el mismo que explora datos de forma rápida y eficaz, y crea segmentos y perfiles con respecto al resultado deseado. CHAID elige la variable independiente (predictora) que presenta la interacción más fuerte con la variable dependiente.
 
 4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
 
