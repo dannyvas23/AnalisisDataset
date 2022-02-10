@@ -93,14 +93,15 @@ Con el método de crecimiento CRT se alcanzó una acierto del 96,6% frente al m�
 |  | Variable dependiente | class |
 ||Variables independientes|alpha, delta, u, g, r, i, z, MJD, redshift|
 |**Especificaciones**|Validación|Ninguna|
-||Máxima profundidad de árbol |5|
+||Máxima profundidad de árbol |3|
 ||Mínimo de casos en un nodo filial|100|
 ||Mínimo de casos en un nodo paren |50|
 | --- | --- | ---| 
 ||Variables independientes incluidas|redshift, r, u, z, i, alpha, MJD, g|
-||Número de nodos|37|
-|**Resultados**|Número de nodos terminales |19|
-||Profundidad|5|
+||Número de nodos|209|
+|**Resultados**|Número de nodos terminales |148|
+||Profundidad|3|
+
 
 
 |  |RESUMEN DE MODELO CRT| | 
