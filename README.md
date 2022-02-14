@@ -69,8 +69,8 @@ Permite crear en cada partición desde dos subconjuntos hasta el mismo número d
 </p>
 
 3. Se selecciona el método de crecimiento que mejor nos parezca conveniente usar.
- - El método de crecimiento que se utilizó fue el CRT (Árboles de clasificación y regresión), el cual divide los datos en segmentos para que sean lo más homogéneos posible respecto a la variable dependiente. 
- - Además, se usó CHAID (Detector automático de interacción chi-cuadrado), el mismo que explora datos de forma rápida y eficaz, y crea segmentos y perfiles con respecto al resultado deseado. CHAID elige la variable independiente (predictora) que presenta la interacción más fuerte con la variable dependiente.
+ - Se usó CHAID (Detector automático de interacción chi-cuadrado) como parámetro predeterminado, el mismo que explora datos de forma rápida y eficaz, y crea segmentos y perfiles con respecto al resultado deseado. CHAID elige la variable independiente (predictora) que presenta la interacción más fuerte con la variable dependiente.
+ -  El método de crecimiento que se utilizó fue el CRT (Árboles de clasificación y regresión) como parámetro de mejora, el cual divide los datos en segmentos para que sean lo más homogéneos posible respecto a la variable dependiente. 
 
 4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
 
