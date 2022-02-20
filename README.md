@@ -90,13 +90,15 @@ Como se puede visualizar los parámetros modificados son “bagSizePercent” y 
 
 6. A continuación, se procede a seleccionar el botón de “Start” para que el modelo empiece a entrenar.
 
-###Análisis e Interpretación de los datos.
+
+### Análisis e Interpretación de los datos.
 Los resultados obtenidos por la herramienta Weka son los siguientes:
 
 Principalmente se realizó el entrenamiento utilizando los parámetros por defecto para el análisis haciendo uso del 80% de los datos del dataset con lo cual se obtuvo un resultado general de clasificación correcta de un 99.99% y con un valor de clasificación incorrecta de 0.0025%, lo que muestra una clasificación precisa.
 
 
 A continuación se procedió a modificar los parámetros  “bagSizePercent” y “numIterations”, con valores de 25 y 20 respectivamente, con lo que se obtuvo un cambio en las estadísticas del entrenamiento. Los valores obtenidos con el cambio de los parámetros son a nivel general tiene un 98.31% de efectividad y 1.68% de error al clasificar los datos.
+
 
 
 Por lo tanto, dentro del análisis se puede visualizar que el algoritmo RandomFores pudo clasificar de forma correcta con sus valores predeterminados, así como modificando sus parámetros para la clasificación del DATASET empleado, con lo cual arrojó valores de 99.99% en sus valores predeterminados y un 98.31% actualizando los parámetros antes descritos con lo que se puede inferir que RandomFores es apropiado para la clasificación del DATASET utilizado, además se puede observar que el valor más notorio son los 970  observaciones que fueron colocados como falsos negativos por lo que estos fueron clasificados como GALAXY.
