@@ -167,4 +167,16 @@ Dentro de la matriz de confusión se puede evidenciar que el modelo está funcio
 ### LINK VIDEO:
 https://www.youtube.com/watch?v=GCFZXFH7ObU
 
+###Conclusiones
 
+1. El software Weka contiene una colección de herramientas de visualización y algoritmos, una extensa colección de técnicas para preprocesamiento de datos y modelado. Además, esta herramienta permite al usuario aplicar algoritmos de clasificación estadística y análisis de regresión a los conjuntos de datos mediante el panel Classify de la interfaz Explorer, en este panel se puede estimar la exactitud del modelo predictivo resultante y tiene utilidades para visualizar el propio modelo, como en este caso, a través de un árbol de decisión.
+2. Un árbol de decisión es una de las herramientas visuales de clasificación y predicción más sencillas, pero muy eficaz, para la toma de decisiones. Este método de aprendizaje autónomo supervisado puede emplearse para problemas de clasificación y regresión de distintos datasets. Pero es importante tener en cuenta que también es un método sensible a pequeñas variaciones en el conjunto de datos de entrenamiento.
+3. El algoritmo Random Forest tiene buena escalabilidad y puede aplicarse a conjuntos de datos con un elevado número de observaciones, puede aplicarse a problemas de regresión y clasificación. Aunque, cuando trata con predictores continuos, pierde parte de su información al categorizarlas en el momento de la división de los nodos.
+4. El algoritmo Random Forest es apropiado para  el análisis de DATASET ya que este crea varios árboles lo cual le facilita realizar una mejor predicción de los datos, como es el ejemplo del DATASET empleado para el análisis lo que arrojó resultados de 99.99% de precisión con los valores predefinidos y realizando un cambio en los parámetros no se encontró mucha diferencia ya que este dio como resultado un 98.31% de precisión. 
+
+###Bibliografía
+[1] Berlanga, V. R. H. M. J. V. B. R. (2013). Cómo aplicar árboles de decisión en SPSS. REIRE. Revista d’Innovació i Recerca En Educació, 6(1), 65-79–79. https://doi.org/10.1344/REIRE2013.6.1615
+
+[2] Espinosa-Zúñiga, J. J., & Espinosa-Zúñiga, J. J. (2020). Aplicación de algoritmos Random Forest y XGBoost en una base de solicitudes de tarjetas de crédito. Ingeniería, Investigación y Tecnología, 21(3), 1–16. 
+
+[3] Joaquín Amat Rodrigo. (n.d.). Random Forest python. Retrieved February 16, 2022, from https://www.cienciadedatos.net/documentos/py08_random_forest_python.html
