@@ -157,8 +157,11 @@ En la tabla de summary se presenta que tiene un porcentaje de clasificación  co
 Dentro de la matriz de confusión se puede evidenciar que el modelo está funcionando correctamente ya que en la diagonal principal los valores son mayores a los valores de los falsos positivos y falsos negativos, por ejemplo  se puede ver que el valor de verdadero positivos de la primera columna clasifico que 11684 pertenecen a la clase GALAXY y que tiene 29 falsos positivos los cuales los clasificó como QSO y 96 como STAR, de igual forma los falsos negativos que seleccionó son 1844 los mismos que los clasificó como GALAXY.   <p align="center">
   <img width="365" height="151" src="https://i.postimg.cc/sxBrgj1K/image11.png">
 </p>
+
 ### Requerimientos previos mínimos
+
 1. Ingresar al repositorio en el siguiente enlace y descargar los archivos de train y test:  https://github.com/dannyvas23/AnalisisDataset
+
 2. Tener instalado Java en windows:
   <p align="center">
   <img width="640" height="374" src="https://i.postimg.cc/zfJYRSVy/image15.png">
