@@ -33,7 +33,7 @@ A continuación se menciona cada una de las columnas que contiene el dataset:
 | fiber_ID | ID de la fibra que identifica la fibra que apuntó la luz al plano focal en cada observación. | 
 
 
-## Herramienta: IBM SPSS
+## Herramienta: WEKA
 ## Algoritmo: Árboles de decisión
 
 ### Concepto.
@@ -49,74 +49,23 @@ Las ventajas de un árbol de decisión:
  - Facilita la comprensión del conocimiento utilizado en la toma de decisiones.
  - Explica el comportamiento respecto a una determinada decisión.
  - Reduce el número de variables independientes.
+### Algoritmo:  Árbol de decisión - Random Forest
+También conocidos en castellano como '"Bosques Aleatorios"' es una combinación de árboles predictores tal que cada árbol depende de los valores de un vector aleatorio probado independientemente y con la misma distribución para cada uno de estos. Es una modificación sustancial de bagging que construye una larga colección de árboles no correlacionados y luego los promedia[2].
+
+En el artículo [3] describe las principales ventajas del algoritmo Random Forest son:
+
+* Pueden usarse para clasificación o predicción: En el primer caso, cada árbol “vota” por una clase y el resultado del modelo es la clase con mayor número de “votos” en todos los árboles, de forma que cada nueva observación se presenta a cada uno de los árboles y se asigna a la clase más “votada”. En el segundo caso, el resultado del modelo es el promedio de las salidas de todos los árboles.
+* El modelo es más simple de entrenar en comparación con técnicas más complejas, pero con un rendimiento similar.
+* Tiene un desempeño muy eficiente y es una de las técnicas más certeras en bases de datos grandes.
+* Puede manejar cientos de predictores sin excluir ninguno y logra estimar cuáles son los predictores más importantes, es por ello que esta técnica también se utiliza para reducción de dimensionalidad.
+* Mantiene su precisión con proporciones grandes de datos perdidos.
+
+Por otra parte en el artículo [3] describe, sus principales desventajas son las siguientes:
+
+* La visualización gráfica de los resultados puede ser difícil de interpretar.
+* Puede sobre ajustar ciertos grupos de datos en presencia de ruido.
+* Las predicciones no son de naturaleza continua y no puede predecir más allá del rango de valores del conjunto de datos usado para entrenar el modelo. En el caso de predictores categóricos con diferente número de niveles, los resultados pueden sesgar hacia los predictores con más niveles.
+* Se tiene poco control sobre lo que hace el modelo (en cierto sentido es como una caja negra).
 
 ### Pasos para la aplicación del Algoritmo.
 
-Algoritmo: Árbol de decisión, con método de crecimiento CHAID y CRT.
-Permite crear en cada partición desde dos subconjuntos hasta el mismo número de grupos que de categorías de la variable predictora, consiguiendo reducir en mayor medida la varianza residual y, al mismo tiempo, mejorar la selección de otras variables explicativas.
-
-1. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol.
-<p align="center">
-  <img width="460" height="300" src="https://i.postimg.cc/bYkn3gXQ/0.png">
-</p>
-
-2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
-- Variable dependiente: class.
-- Variables independientes: alpha, delta, u, g, r, i, z, MJD, redshift.
-- Variables sin importancia para el análisis(son identificadores): run_ID, rerun_ID, cam_col, field_ID, spec_obj_ID, fiber_ID, obj_ID, plate.
-<p align="center">
-  <img width="460" height="370" src="https://i.postimg.cc/MZnnFYhs/1.jpg">
-</p>
-
-3. Se selecciona el método de crecimiento que mejor nos parezca conveniente usar.
- - Se usó CHAID (Detector automático de interacción chi-cuadrado) como parámetro predeterminado, el mismo que explora datos de forma rápida y eficaz, y crea segmentos y perfiles con respecto al resultado deseado. CHAID elige la variable independiente (predictora) que presenta la interacción más fuerte con la variable dependiente.
- -  El método de crecimiento que se utilizó fue el CRT (Árboles de clasificación y regresión) como parámetro de mejora, el cual divide los datos en segmentos para que sean lo más homogéneos posible respecto a la variable dependiente. 
-
-4. A continuación, se procede a seleccionar el botón de “Aceptar” para que se procesen los datos.
-
-### Análisis e Interpretación de aplicación del algoritmo.
-
-Los resultados obtenidos por la herramienta IBM SPSS son los siguientes:
-
-Con el método de crecimiento CRT se alcanzó una acierto del 96,6% frente al método CHAID con 96,1%, lo cual permite analizar que la clasificación fue mejor en el primer método, además hay que señalar que en los datos clasificados por “QSO” y “START” existen gran variación, como por ejemplo: lo que provoca que la primera clase mencionada anteriormente existen un total de 2607 falsos negativos, lo que quiere decir que esos valores reales son de la clase “QSO” pero el modelo los predijo como valores “Galaxy”, por lo que tanto, pierde efectividad en la predicción dando un porcentaje de 86,2% (El error correspondiente sería del 13,8% que serían un total de 2610 muestras clasificadas en otros aspectos).
-<p align="center">
-  <img width="400" height="200" src="https://i.postimg.cc/8kR2N8Qs/cf0.png">
-</p>
-<p align="center">
-  <img width="400" height="200" src="https://i.postimg.cc/J4728G5d/cf1.png">
-</p>
-
-
-|  |RESUMEN DE MODELO CHAID| | 
-| --- | --- | ---|   
-|  | Método de crecimiento | CHAID | 
-|  | Variable dependiente | class |
-||Variables independientes|alpha, delta, u, g, r, i, z, MJD, redshift|
-|**Especificaciones**|Validación|Ninguna|
-||Máxima profundidad de árbol |3|
-||Mínimo de casos en un nodo filial|100|
-||Mínimo de casos en un nodo paren |50|
-| --- | --- | ---| 
-||Variables independientes incluidas|redshift, r, u, z, i, alpha, MJD, g|
-||Número de nodos|209|
-|**Resultados**|Número de nodos terminales |148|
-||Profundidad|3|
-
-
-
-|  |RESUMEN DE MODELO CRT| | 
-| --- | --- | ---|   
-|  | Método de crecimiento | CRT | 
-|  | Variable dependiente | class |
-||Variables independientes|alpha, delta, u, g, r, i, z, MJD, redshift|
-|**Especificaciones**|Validación|Ninguna|
-||Máxima profundidad de árbol |5|
-||Mínimo de casos en un nodo filial|100|
-||Mínimo de casos en un nodo paren |50|
-| --- | --- | ---| 
-||Variables independientes incluidas|redshift, r, u, z, i, alpha, MJD, g|
-||Número de nodos|37|
-|**Resultados**|Número de nodos terminales |19|
-||Profundidad|5|
-
-Como se puede apreciar en la tabla 1 y 2 se puede ver el resumen de los modelos empleados, aquí se denotan algunas diferencias que caracterizan a cada algoritmo; en el algoritmo CHAID, genera un árbol que cuenta con una profundidad de 3, con un número de nodos de 209 y nodos terminales 148, en cambio haciendo uso del algoritmo CRT incrementa la profundidad a 5 y reduce el número de nodos a 37  y 19 nodos terminales.
