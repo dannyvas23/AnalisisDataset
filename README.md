@@ -105,6 +105,7 @@ Por otra parte en el artículo [3] describe, sus principales desventajas son las
 </p>
 Como se puede visualizar los parámetros modificados son “bagSizePercent” y “numIterations”, con valores de 25 y 20 respectivamente, esto se lo hizo con la finalidad de visualizar los cambios en los resultados finales al realizar el entrenamiento del modelo. Además, el tamaño de cada muestra aleatoria se especifica en bagSizePercent, qué es un tamaño como porcentaje del conjunto de datos de entrenamiento sin procesar. El valor predeterminado es 100%, lo que creará una nueva muestra aleatoria del mismo tamaño que el conjunto de datos de entrenamiento, pero tendrá una composición diferente. Mientras el numIterations es el número de interacciones máximas del modelo base que se desea crear. 
 
+
 6. A continuación, se procede a seleccionar el botón de “Start” para que el modelo empiece a entrenar.
 
 
@@ -142,11 +143,11 @@ Por lo tanto, dentro del análisis se puede visualizar que el algoritmo RandomFo
  <p align="center">
   <img width="375" height="185" src="https://i.postimg.cc/HxvmmcWV/image10.png">
 </p>
-Cabe destacar que para realizar una predicción correcta se tiene que agregar un dataset con el campo de la variable dependiente o class con el **signo de interrogación (?)**,  el cual permite al algoritmo de weka analizar dicha variable en base a los valores antes ingresados al modelo. En la siguiente ilustración se muestra un ejemplo del dataset utilizado para el análisis
+Cabe destacar que para realizar una predicción correcta se tiene que agregar un dataset con el campo de la variable dependiente o class con el signo de interrogación (?) ,  el cual permite al algoritmo de weka analizar dicha variable en base a los valores antes ingresados al modelo. En la siguiente ilustración se muestra un ejemplo del dataset utilizado para el análisis
  <p align="center">
   <img width="1403" height="250" src="https://i.postimg.cc/C15ychCY/image13.png">
 </p>
-5. Una vez subidos los nuevos datos el algoritmo RamdonForest realiza la predicción creando varios árboles para luego usarlos con la variable de interés que en este caso es la clase a la cual se le agregó el signo de interrogación al subir el dataset. Por lo que se puede ver en la siguiente ilustración presenta una tabla con los valores obtenidos de la predicción, la cuen en la columna de predicted se observa que las clases de clases tiene un valor y el nombre al cual pertenecen como por ejemplo: **1 pertenece a GALAXY, 2 pertenece a QSO y 3 a STAR**. Como se puede ver en la columna de predicction existen valores de 0.5 hasta 0.7 con lo que se puede inferir que el modelo está realizando predicciones precisas
+5. Una vez subidos los nuevos datos el algoritmo RamdonForest realiza la predicción creando varios árboles para luego usarlos con la variable de interés que en este caso es la clase a la cual se le agregó el signo de interrogación al subir el dataset. Por lo que se puede ver en la siguiente ilustración presenta una tabla con los valores obtenidos de la predicción, la cuen en la columna de predicted se observa que las clases de clases tiene un valor y el nombre al cual pertenecen como por ejemplo: 1 pertenece a GALAXY, 2 pertenece a QSO y 3 a STAR. Como se puede ver en la columna de predicction existen valores de 0.5 hasta 0.7 con lo que se puede inferir que el modelo está realizando predicciones precisas
  <p align="center">
   <img width="448" height="278" src="https://i.postimg.cc/3r6hbvbq/image14.png">
 </p>
