@@ -68,4 +68,25 @@ Por otra parte en el artículo [3] describe, sus principales desventajas son las
 * Se tiene poco control sobre lo que hace el modelo (en cierto sentido es como una caja negra).
 
 ### Pasos para la aplicación del Algoritmo.
+1. Una vez descargado el dataset se procedió a dividirlo en dos partes al conjunto datos, correspondiente al 80% para entrenamiento y 20 % para pruebas.
+2. Se identifica cuales son las variables dependientes, independientes y las que causan ruido o no tienen importancia, a continuación se describe:
+- Variable dependiente: class.
+- Variables independientes: alpha, delta, u, g, r, i, z, MJD, redshift.
+- Variables sin importancia para el análisis(son identificadores): run_ID, rerun_ID, cam_col, field_ID, spec_obj_ID, fiber_ID, obj_ID, plate.
+3. Una vez importado el dataset que contiene el 80% de los datos, se procede al entrenamiento se sigue los siguientes pasos:
+   a. Seleccionar la pestaña classify.
+   b. Seleccionar el algoritmo de entrenamiento (RandomForest). 
+   c. Seleccionar Use Training set.
+   d. Seleccionar la variable dependiente.
+   e. Presionar start.
+   
+4. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol RandomForest.}
+5. Para usar el algoritmo se utilizó los parámetros que traen por defecto en el apartado de propiedades y así mismo se modificaron algunos de ellos para hacer la comparativa de los resultados.
+- Parámetros por defecto:
+
+- Parámetros modificados: 
+
+Como se puede visualizar los parámetros modificados son “bagSizePercent” y “numIterations”, con valores de 25 y 20 respectivamente, esto se lo hizo con la finalidad de visualizar los cambios en los resultados finales al realizar el entrenamiento del modelo. Además, el tamaño de cada muestra aleatoria se especifica en bagSizePercent, qué es un tamaño como porcentaje del conjunto de datos de entrenamiento sin procesar. El valor predeterminado es 100%, lo que creará una nueva muestra aleatoria del mismo tamaño que el conjunto de datos de entrenamiento, pero tendrá una composición diferente. Mientras el numIterations es el número de interacciones máximas del modelo base que se desea crear. 
+
+6. A continuación, se procede a seleccionar el botón de “Start” para que el modelo empiece a entrenar.
 
