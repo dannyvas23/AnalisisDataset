@@ -102,3 +102,27 @@ A continuación se procedió a modificar los parámetros  “bagSizePercent” y
 
 
 Por lo tanto, dentro del análisis se puede visualizar que el algoritmo RandomFores pudo clasificar de forma correcta con sus valores predeterminados, así como modificando sus parámetros para la clasificación del DATASET empleado, con lo cual arrojó valores de 99.99% en sus valores predeterminados y un 98.31% actualizando los parámetros antes descritos con lo que se puede inferir que RandomFores es apropiado para la clasificación del DATASET utilizado, además se puede observar que el valor más notorio son los 970  observaciones que fueron colocados como falsos negativos por lo que estos fueron clasificados como GALAXY.
+
+
+### Predicciones con nuevos datos como ejemplo de aplicación del algoritmo
+1. Se agregó otra columna denominada “class_value”, en la cual permitirá realizar las predicciones posteriores.
+2. División del dataset, 80% para entrenamiento  y 20% para pruebas.
+3. Guardado de archivos test y train en formato CSV.
+4. Para subir los datos con los cuales se va a realizar la predicción, en base al modelo antes entrenado, se tiene que ingresar en Test options en la sección de supplied test set, el mismo que presenta una pestaña que permite subir un dataset nuevo y escoger la class o variable con la cual se va a realizar la predicción
+
+Cabe destacar que para realizar una predicción correcta se tiene que agregar un dataset con el campo de la variable dependiente o class con el **signo de interrogación (?)**,  el cual permite al algoritmo de weka analizar dicha variable en base a los valores antes ingresados al modelo. En la siguiente ilustración se muestra un ejemplo del dataset utilizado para el análisis
+5. Una vez subidos los nuevos datos el algoritmo RamdonForest realiza la predicción creando varios árboles para luego usarlos con la variable de interés que en este caso es la clase a la cual se le agregó el signo de interrogación al subir el dataset. Por lo que se puede ver en la siguiente ilustración presenta una tabla con los valores obtenidos de la predicción, la cuen en la columna de predicted se observa que las clases de clases tiene un valor y el nombre al cual pertenecen como por ejemplo: **1 pertenece a GALAXY, 2 pertenece a QSO y 3 a STAR**. Como se puede ver en la columna de predicction existen valores de 0.5 hasta 0.7 con lo que se puede inferir que el modelo está realizando predicciones precisas
+
+En la tabla de summary se presenta que tiene un porcentaje de clasificación  correcta de un 90.145% y una clasificación incorrecta de 9.855% lo cual el modelo está clasificando correctamente las clases en base a las variables independientes con las cuales fue entrenado el modelo anteriormente
+
+Dentro de la matriz de confusión se puede evidenciar que el modelo está funcionando correctamente ya que en la diagonal principal los valores son mayores a los valores de los falsos positivos y falsos negativos, por ejemplo  se puede ver que el valor de verdadero positivos de la primera columna clasifico que 11684 pertenecen a la clase GALAXY y que tiene 29 falsos positivos los cuales los clasificó como QSO y 96 como STAR, de igual forma los falsos negativos que seleccionó son 1844 los mismos que los clasificó como GALAXY.  
+### Requerimientos previos mínimos
+1. Ingresar al repositorio en el siguiente enlace y descargar los archivos de train y test:  https://github.com/dannyvas23/AnalisisDataset
+2. Tener instalado Java en windows:
+
+3. Tener instalado la herramienta Weka. Disponible en: https://sourceforge.net/projects/weka/files/weka-3-8/3.8.6/weka-3-8-6-azul-zulu-windows.exe/download?use_mirror=razaoinfo
+
+### LINK VIDEO:
+https://www.youtube.com/watch?v=GCFZXFH7ObU
+
+
