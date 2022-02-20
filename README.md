@@ -75,7 +75,7 @@ Por otra parte en el artículo [3] describe, sus principales desventajas son las
 - Variables sin importancia para el análisis(son identificadores): run_ID, rerun_ID, cam_col, field_ID, spec_obj_ID, fiber_ID, obj_ID, plate.
    
    <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/xXsw9h2W/image6.png">
+  <img width="220" height="220" src="https://i.postimg.cc/xXsw9h2W/image6.png">
 </p>
 3. Una vez importado el dataset que contiene el 80% de los datos, se procede al entrenamiento se sigue los siguientes pasos:
    a. Seleccionar la pestaña classify.
@@ -84,18 +84,18 @@ Por otra parte en el artículo [3] describe, sus principales desventajas son las
    d. Seleccionar la variable dependiente.
    e. Presionar start.
 <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/s17C5TYh/image1.png">
+  <img width="220" height="220" src="https://i.postimg.cc/s17C5TYh/image1.png">
 </p>
    
 4. Una vez importado el dataset, se seleccionó el algoritmo de clasificación de árbol RandomForest.
    <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/jLT0cyck/image2.png">
+  <img  src="https://i.postimg.cc/jLT0cyck/image2.png">
 </p>
 
 5. Para usar el algoritmo se utilizó los parámetros que traen por defecto en el apartado de propiedades y así mismo se modificaron algunos de ellos para hacer la comparativa de los resultados.
 - Parámetros por defecto:
    <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/7fNvWbQP/image3.png">
+  <img  src="https://i.postimg.cc/7fNvWbQP/image3.png">
 </p>
 
 - Parámetros modificados: 
@@ -154,13 +154,13 @@ En la tabla de summary se presenta que tiene un porcentaje de clasificación  co
   <img width="300" height="300" src="https://i.postimg.cc/yDYq4Bwm/image5.png">
 </p>
 Dentro de la matriz de confusión se puede evidenciar que el modelo está funcionando correctamente ya que en la diagonal principal los valores son mayores a los valores de los falsos positivos y falsos negativos, por ejemplo  se puede ver que el valor de verdadero positivos de la primera columna clasifico que 11684 pertenecen a la clase GALAXY y que tiene 29 falsos positivos los cuales los clasificó como QSO y 96 como STAR, de igual forma los falsos negativos que seleccionó son 1844 los mismos que los clasificó como GALAXY.   <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/LgM7yMtZ/image11.png">
+  <img  src="https://i.postimg.cc/LgM7yMtZ/image11.png">
 </p>
 ### Requerimientos previos mínimos
 1. Ingresar al repositorio en el siguiente enlace y descargar los archivos de train y test:  https://github.com/dannyvas23/AnalisisDataset
 2. Tener instalado Java en windows:
   <p align="center">
-  <img width="300" height="300" src="https://i.postimg.cc/WdfHBZmV/image15.png">
+  <img  src="https://i.postimg.cc/WdfHBZmV/image15.png">
 </p>
 3. Tener instalado la herramienta Weka. Disponible en: https://sourceforge.net/projects/weka/files/weka-3-8/3.8.6/weka-3-8-6-azul-zulu-windows.exe/download?use_mirror=razaoinfo
 
